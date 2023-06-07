@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ecommerceJavierOspina</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./src/assets/images/main_logo.png" alt="logo de la marca">
+      <span class="menu-icon">Ver menu</span>
+    </div>
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="#"><i class='bx bx-home-smile'></i><br>Home</a></li>
+        <li><a href="#"><i class='bx bx-search'></i><br>Buscar</a></li>
+        <li><a href="#"><i class='bx bx-shopping-bag'></i><br>Cart</a></li>
+        <li><a href="#"><i class='bx bxs-adjust-alt'></i><br>Mode</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#"><button><i class='bx bx-chat' ></i>Contact</button></a>
+  </header>
+  <main class="main">
+    <div class="product-container" id="product-container">
+      <!-- Aquí se mostrarán los productos -->
+    </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <p>Pagina diseñada por Javier Ospina</p>
+    </div>
+  </footer>
+  <div class="product-overlay" id="product-overlay">
+    <div class="product-details">
+      <div class="close-btn" id="close-btn"><i class='bx bx-exit'></i></div>
+      <h2 id="product-name"></h2>
+      <div class="product-price" id="product-price"></div>
+      <div class="size-options">
+        <h3>Tallas:</h3>
+        <div class="size-buttons">
+          <button class="size-btn">XS</button>
+          <button class="size-btn">S</button>
+          <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
+          <button class="size-btn">XL</button>
+        </div>
+      </div>
+      <div class="color-options">
+        <h3>Colores:</h3>
+        <div class="color-buttons">
+          <button class="color-btn" style="background-color: red;"></button>
+          <button class="color-btn" style="background-color: blue;"></button>
+          <button class="color-btn" style="background-color: yellow;"></button>
+          <button class="color-btn" style="background-color: green;"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
