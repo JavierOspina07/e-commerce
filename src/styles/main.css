@@ -11,7 +11,7 @@
   --color: #eceff1;
   --color-price: #424242;
   --color-cart: brown;
-  --color-to-close:rgb(255, 0, 0) ;
+  --color-to-close: rgb(255, 0, 0) ;
   --color-footer: #272626;
 
   /* Font and typography */
@@ -138,6 +138,7 @@ main {
   right: 0;
   z-index: 2;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
 }
 
 /* logo del header */
@@ -379,10 +380,6 @@ main {
   display: block;
 }
 
-.product__card:hover .details__btn {
-  display: block;
-}
-
 .details__btn:hover {
   background-color: var(--secondary-color);
 }
@@ -417,9 +414,14 @@ main {
 }
 
 .close__text__details {
-  color: var(--color-to-close);
   font-size: 16px;
   text-align: center;
+}
+
+.close__btn:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+
 }
 
 .size__options,
