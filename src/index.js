@@ -56,6 +56,7 @@ async function fetchData() {
       addToCartBtn.addEventListener('click', () => {
         addToCartBtn(product);
       });
+      
     });
   } catch (error) {
     console.error(error);
