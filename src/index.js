@@ -87,6 +87,7 @@ if(localStorage.getItem('dark-mode') === 'true'){
   btnSwitch.classList.add('active')
 }else{
   document.body.classList.remove('dark');
+  document.header.classList.remove('dark');
   btnSwitch.classList.remove('active');
 }
 
