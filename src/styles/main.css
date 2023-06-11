@@ -323,7 +323,9 @@ header.abajo{
   transition: all 0.3s;
 }
 
-.footer .btn button {
+/* ==========  BOTON DE CONTATCO  ==========  */
+
+.footer .btn__contact button {
   font-weight: 700;
   padding: 9px 25px;
   background: var(--color);
@@ -331,15 +333,16 @@ header.abajo{
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s; 
+  margin-top: 10px;
 }
 
-.footer .btn button:hover {
+.footer .btn__contact button:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transform: scale(1.5);
 }
 
-/* =============PRODUCTS============== */
+/* =============  PRODUCTS  ============== */
 .product__container {
   flex: 1;
   display: flex;
@@ -450,11 +453,11 @@ header.abajo{
   color: cornflowerblue;
 }
 
-/* footer */
+/* =================  footer ================= */
 
 .footer {
-  padding: 0.5rem 0;
-  text-align: center;
+  padding-left: 20px;
+  text-align: left;
   color: var(--color);
   background: var(--color-footer);
 }
@@ -488,7 +491,7 @@ header.abajo{
   background-color: var(--secondary-color);
 }
 
-/* Agregados para la ventana emergente */
+/*===== Agregados para la ventana emergente =====*/
 .product__overlay {
   display: none;
   position: fixed;
@@ -507,14 +510,16 @@ header.abajo{
   padding: 20px;  
   border-radius: 5px;
   text-align: center;
+  position: absolute;
 }
 
 .close__btn {
-  position: sticky;
-  display: inline-block;
-  font-size: 50px;
+  position: relative  ;
+  font-size: 20px;
   cursor: pointer;
   color: var(--color-to-close);
+  right: 0;
+  top: 0;
 }
 
 .close__text__details {
@@ -606,5 +611,16 @@ header.abajo{
   transform: translate(-25%, -25%);
   color: var(--color-cart);
   font-weight: bold;
+}
+
+.social__networks {
+  list-style: none;
+  font-weight: 700;
+}
+
+.social__networks li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 0px;
 }
 
