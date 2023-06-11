@@ -232,6 +232,12 @@ main {
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
 }
+
+header.abajo{
+  background: var(--color-footer);
+}
+
+
 .header.dark {
   display: flex;
   background: var(--color-footer);
@@ -404,7 +410,7 @@ main {
   margin-bottom: 2px;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #000000; 
+
 }
 
 .price {
