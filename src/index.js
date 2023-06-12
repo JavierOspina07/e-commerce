@@ -3,12 +3,15 @@ const productOverlay = document.getElementById('product__overlay');
 const closeBtn = document.getElementById('close__btn');
 const productName = document.getElementById('product__name');
 const productPrice = document.getElementById('product__price');
+const productImage = document.getElementById('product__image');
+
 
 /* ====================== Detalles del producto ===================== */
 
 function showProductDetails(product) {
   productName.textContent = product.name;
   productPrice.textContent = `$${product.price}`;
+  productImage.src = product.image;
   productOverlay.style.display = 'flex';
 }
 
