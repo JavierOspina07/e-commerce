@@ -453,7 +453,7 @@ header.abajo{
   color: cornflowerblue;
 }
 
-/* =================  FOOTER ================= */
+/*  =================  FOOTER =================  */
 
 .footer {
   padding-left: 20px;
@@ -487,7 +487,7 @@ header.abajo{
   margin-bottom: 10px;
 }
 
-/* ========================  BOTON DETALLE  ========================  */
+/*  ========================  BOTON DETALLE  ========================  */
 .details__btn {
   display: none;
   position: absolute;
@@ -512,7 +512,7 @@ header.abajo{
   background-color: var(--secondary-color);
 }
 
-/*===== Agregados para la ventana emergente =====*/
+/*  ===== Agregados para la ventana emergente =====  */
 .product__overlay {
   display: none;
   position: fixed;
@@ -533,7 +533,7 @@ header.abajo{
   text-align: center;
   position: absolute;
 }
-/* ====================  IMAGEN DEL PRODUCTO EN DETALLES DEL PRODUCTO  ==================== */
+/*  ====================  IMAGEN DEL PRODUCTO EN DETALLES DEL PRODUCTO  ====================  */
 .product__image {
   width: 100%;
   height: auto;
@@ -688,7 +688,7 @@ header.abajo{
   height: auto; 
 }
 
-/* ============== REDES SOCIALES FOOTER  ============== */
+/*  ============== REDES SOCIALES FOOTER  ==============  */
 
 .social__networks {
   list-style: none;
@@ -705,17 +705,36 @@ header.abajo{
   .bxl-facebook{
     color: #1877F2
   }
+  .bxl-facebook:hover{
+    transform: scale(1.7);
+    transition: all 0.3s ease;  
+  }
 
   .bxl-instagram{
     color: #E4405F
+  }
+
+  .bxl-instagram:hover{
+    transform: scale(1.7);
+    transition: all 0.3s ease;  
   }
 
   .bxl-twitter{
     color: #1DA1F2;
   }
 
+  .bxl-twitter:hover{
+    transform: scale(1.7);
+    transition: all 0.3s ease;  
+  }
+
   .bxl-whatsapp{
     color: #25D366;
+  }
+
+  .bxl-whatsapp:hover{
+    transform: scale(1.7);
+    transition: all 0.3s ease;  
   }
 
 
