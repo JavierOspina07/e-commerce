@@ -26,7 +26,6 @@ closeBtn.addEventListener('click', () => {
 
 /* API CON ASYNC */
 
-
 async function fetchData() {
   try {
     const response = await fetch('https://ecommercebackend.fundamentos-29.repl.co');
@@ -70,7 +69,7 @@ async function fetchData() {
   }
 }
 
-fetchData()
+fetchData(  )
 
 
 /* ==============  BONTON DARKMODE  ============= */
@@ -112,6 +111,7 @@ function loader (){
     loader.classList.add('loader--hidden')
   })
 }
+
 
 loader()
 
@@ -156,5 +156,3 @@ function showCart() {
 }
 
 showCart()
-
-
