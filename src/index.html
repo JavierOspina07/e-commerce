@@ -11,9 +11,11 @@
   <!-- ICONS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="./assets/images/main_logo.png" type="image/x-icon">
+  <!-- JS -->
   <script src="https://kit.fontawesome.com/d7b15b584a.js" crossorigin="anonymous"></script>
-   <!-- JS -->
- <script src="./assets/js/index.js" type="module" defer></script>
+ <script src="./assets/js/main.js" type="module" defer></script>
+ <script src="./assets/js/helpers/navbar.js"></script>
+ <script src="./assets/js/helpers/darkmode.js" type="module" defer></script>
 </head>
 <body>
     <!-- Loader -->
@@ -64,12 +66,15 @@
       </div>
     </nav>
   </header>
-   <main class="main">
-    <div class="product__container" id="product__container">
-      <!-- Aquí se mostrarán los productos -->
+  <main class="main">
+    <section class="products section">
+      <h2 class="products__title section--title">Productos</h2>
+      <div class="products__container container"></div>
+    </section>
+    <div class="product">
     </div>
   </main>
-
+  
   <!-- CART -->
   <div class="cart">
     <div class="cart__container">
@@ -81,7 +86,7 @@
       </div>
       <div class="cart__body"></div>
       <div class="cart__footer">
-        <div class="cart__count">
+        <div class="cart__count"> 
           <span class="cart__count--text">Articulos</span>
           <span class="cart__count--item">0</span>
         </div>
@@ -96,41 +101,13 @@
     </div>
   </div>
 
-  <!-- VER DETALLES -->
-  <div class="product__overlay" id="product__overlay">
-    <div class="product__details">
-      <!-- BOTON DE CERRAR DETALLES -->
-      <div class="close__btn" id="close__btn">
-        <i class='bx bx-exit'></i>
-      </div>
-      <h2 id="product__name"></h2>
-      <div class="product_detail__price" id="product__price"></div>
-      <div class="size-options">
-        <h3>Tallas:</h3>
-        <div class="size__buttons">
-          <button class="size__btn">XS</button>
-          <button class="size__btn">S</button>
-          <button class="size__btn">M</button>
-          <button class="size__btn">L</button>
-          <button class="size__btn">XL</button>
-        </div>
-      </div>
-      <div class="color__options">
-        <h3>Colores:</h3>
-        <div class="color__buttons">
-          <button class="color__red__btn">R</button>
-          <button class="color__blue__btn">B</button>
-          <button class="color__yellow__btn">Y</button>
-          <button class="color__green__btn">G</button>
-        </div>
-      </div>
-     
-      <!-- Imagen del producto -->
-      <img id="product__image" class='product__image' src="" alt="Product Image">
-      <!-- descripcion del producto -->
-      <div id="product__description" class="product__description"></div>
-    </div>
+    <!-- Imagen del producto -->
+    <img id="product__image" class='product__image' src="" alt="Product Image">
+    <!-- Descripción del producto -->
+    <div id="product__description" class="product__description"></div>
   </div>
+</div>
+
 
   <!-- FOOTER -->
   <footer class="footer">
